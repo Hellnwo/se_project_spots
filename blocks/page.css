@@ -1,0 +1,12 @@
+body {
+    background-color: #FCF5E5;
+}
+
+.page {
+    min-width: 1416px;
+    max-width: 1440px;
+    margin: auto;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}

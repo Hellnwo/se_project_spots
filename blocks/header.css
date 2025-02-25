@@ -1,0 +1,15 @@
+.header {
+  max-width: 1440px;
+  max-height: 48px;
+  background-color: #FFFF;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 80px;
+}
+
+.header__logo {
+  width: 94px;
+  height: 26px;
+}
