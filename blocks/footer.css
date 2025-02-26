@@ -1,6 +1,6 @@
 .footer {
-    margin: 1340px 0 0 668px;
-    padding: 0;
+    margin: 0 0 0 668px;
+    padding: 0 0 40px;
 }
 
 .footer__copyright {
@@ -8,6 +8,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  color: #212121;
-  opacity: 70%;
+  color: rgba(33, 33, 33, 0.7)
 }
