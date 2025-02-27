@@ -9,3 +9,11 @@
   line-height: 1;
   color: rgba(33, 33, 33, 0.7)
 }
+
+@media screen and (max-width: 627px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 108px 0;
+  }
+}
