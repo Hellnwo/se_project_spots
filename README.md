@@ -42,3 +42,5 @@ This site has the ability to scale between desktop and mobile. Along with this, 
 ![Hover Demo](./images/demo/Hover_Demo.gif)
 
 ### Github Pages Link
+
+* [Spots on Github Pages](https://hellnwo.github.io/se_project_spots/)
