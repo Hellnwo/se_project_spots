@@ -59,6 +59,9 @@
     gap: 8px;
 }
 
+.profile__add-btn:hover {
+    background-color: rgba(33, 33, 33, .8);
+}
 
 .profile__edit-btn {
     display: flex;
@@ -71,10 +74,18 @@
     gap: 8px;
 }
 
+.profile__edit-btn:hover {
+    color: rgba(33, 33, 33, 1);
+}
+
 .profile__edit-btn_image {
     width: 18.5px;
     height: 16px;
     color: rgba(33, 33, 33, .7);
+}
+
+.profile__edit-btn_image:hover {
+    color: rgba(33, 33, 33, 1);
 }
 
 @media screen and (max-width: 627px) {
