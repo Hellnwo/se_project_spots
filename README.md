@@ -9,6 +9,7 @@
   * CSS Techs 
 * Features  
 * Github Pages Link
+* Video Link
 
 ### Intro to Project
   
@@ -37,10 +38,21 @@ Figma is a wonderful design tool that allows one to plan out their web design an
 ### Features
 
 This site has the ability to scale between desktop and mobile. Along with this, it has two buttons customized with css that would allow a user to edit their profile and make a new post. Each image can be named and if a user so chooses, liked/ favorited for viewing pleasure later. 
-![Desktop to Mobile Demo](./images/demo/Desktop_to_Mobile.gif)
-![Desktop scroll](./images/demo/Scroll.gif)
-![Hover Demo](./images/demo/Hover_Demo.gif)
+![Mobile Scroll 1](./images/Demo/Mobile_1.png)
+![Mobile Scroll 2](./images/Demo/Mobile_2.png)
+![Mobile Scroll 3](./images/Demo/Mobile_3.png)
+![Mobile Scroll 4](./images/Demo/Mobile_4.png)
+![Desktop scroll 1](./images/Demo/Desktop_1.png)
+![Desktop scroll 2](./images/Demo/Desktop_2.png)
+![Hover Demo Edit 1](./images/Demo/Edit_2.png)
+![Hover Demo Edit 2](./images/Demo/Edit_1.png)
+![Hover Demo New 1](./images/Demo/New_2.png)
+![Hover Demo New 2](./images/Demo/New_1.png)
+![Hover Demo Heart 1](./images/Demo/Heart_2.png)
+![Hover Demo Heart 2](./images/Demo/Heart_1.png)
 
 ### Github Pages Link
 
 * [Spots on Github Pages](https://hellnwo.github.io/se_project_spots/)
+
+### Video Link
