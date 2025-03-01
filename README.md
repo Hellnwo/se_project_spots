@@ -9,6 +9,7 @@
   * CSS Techs 
 * Features  
 * Github Pages Link
+* Video Link
 
 ### Intro to Project
   
@@ -44,3 +45,5 @@ This site has the ability to scale between desktop and mobile. Along with this, 
 ### Github Pages Link
 
 * [Spots on Github Pages](https://hellnwo.github.io/se_project_spots/)
+
+### Video Link
