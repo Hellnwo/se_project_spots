@@ -8,8 +8,7 @@
 
 .profile__avatar_image {
     margin-right: 20px;
-    max-width: 190px;
-    max-height: 190px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -26,6 +25,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     line-clamp: 3;
+    max-width: 420px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -39,6 +39,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     line-clamp: 3;
+    max-width: 420px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -60,22 +61,24 @@
 }
 
 .profile__add-btn:hover {
-    background-color: rgba(33, 33, 33, .8);
+    background-color: rgba(33, 33, 33);
+    opacity: .8;
+    cursor: pointer;
 }
 
 .profile__edit-btn {
-    display: flex;
     margin-top: auto;
     font-size: 16px;
     line-height: 1;
     color: rgba(33, 33, 33, .7);
     background-color: transparent;
     border: none;
-    gap: 8px;
 }
 
 .profile__edit-btn:hover {
-    color: rgba(33, 33, 33, 1);
+    color: rgba(33, 33, 33);
+    opacity: 1;
+    cursor: pointer;
 }
 
 .profile__edit-btn_image {
