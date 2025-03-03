@@ -67,6 +67,8 @@
 }
 
 .profile__edit-btn {
+    display: flex;
+    gap: 8px;
     margin-top: auto;
     font-size: 16px;
     line-height: 1;

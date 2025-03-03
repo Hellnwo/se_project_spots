@@ -54,3 +54,7 @@ This site has the ability to scale between desktop and mobile. Along with this, 
 ### Github Pages Link
 
 * [Spots on Github Pages](https://hellnwo.github.io/se_project_spots/)
+
+### Video Link
+
+* [Video on GDrive](https://drive.google.com/file/d/1MWsAXYJ4J80St6vQ3OYFkB9nAJtMdwNS/view?usp=sharing)
