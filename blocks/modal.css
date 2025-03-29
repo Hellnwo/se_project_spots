@@ -93,6 +93,40 @@
     cursor: pointer;
 }
 
+.modal__container_type_preview {
+    padding: 0;
+    background: none;
+    width: auto;
+}
+
+.modal__close-btn_type_preview {
+    background-image: url(../images/XLight.svg);
+    top: 0;
+    right: -50px;
+    opacity: 1;
+}
+
+.modal__image {
+    padding: 0;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.modal__caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 135px;
+    height: 32px;
+    color: #fff;
+    background-color: rgba(33, 33, 33);
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 627px) {
     .modal {
         padding: 0 10px;
