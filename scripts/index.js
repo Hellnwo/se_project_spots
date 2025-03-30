@@ -38,8 +38,8 @@ const profileDescription = document.querySelector(".profile__subtitle");
 const editModal = document.querySelector("#edit-modal");
 const editFormElement = editModal.querySelector(".modal__form");
 const editModalCloseBtn = editModal.querySelector(".modal__close-btn");
-const NameInput = editModal.querySelector("#profile-name-input");
-const DescriptionInput = editModal.querySelector("#profile-description-input");
+const nameInput = editModal.querySelector("#profile-name-input");
+const descriptionInput = editModal.querySelector("#profile-description-input");
 
 const cardModal = document.querySelector("#add-card-modal");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
@@ -80,10 +80,6 @@ function getCardElement(data) {
     previewModalImageEl.alt = data.name;
   });
 
-  previewModalClsBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   cardDeleteBtn.addEventListener("click", () => {
     cardElement.remove();
   })
@@ -101,14 +97,14 @@ function closeModal(modal) {
 
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
-  profileName.textContent = NameInput.value;
-  profileDescription.textContent = DescriptionInput.value;
+  profileName.textContent = nameInput.value;
+  profileDescription.textContent = descriptionInput.value;
   closeModal(editModal);
 }
 
 profileEditButton.addEventListener("click", () => {
-  NameInput.value = profileName.textContent;
-  DescriptionInput.value = profileDescription.textContent;
+  nameInput.value = profileName.textContent;
+  descriptionInput.value = profileDescription.textContent;
   openModal(editModal);
 });
 
@@ -118,10 +114,15 @@ function handleCardFormSubmit(evt) {
   const cardEl = getCardElement(inputValues);
   cardsList.prepend(cardEl);
   closeModal(cardModal);
+  evt.target.reset();
 }
 
 editModalCloseBtn.addEventListener("click", () => {
   closeModal(editModal);
+});
+
+previewModalClsBtn.addEventListener("click", () => {
+  closeModal(previewModal);
 });
 
 cardModalButton.addEventListener("click", () => {

@@ -88,4 +88,9 @@
         width: 20px;
         height: 18px;
     }
+
+    .card__delete-btn {
+        top: 10px;
+        left: 246px;
+    }
 }
