@@ -77,9 +77,19 @@
     padding: 16px 12px;
 }
 
+.modal__input_type_error {
+    border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.modal__error {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 0, 0, 0.6);
 }
 
 .modal__submit-btn {
@@ -94,6 +104,10 @@
 .modal__submit-btn:hover {
     opacity: .8;
     cursor: pointer;
+}
+
+.modal__submit-btn_inactive {
+    opacity: .5;
 }
 
 .modal__container_type_preview {
