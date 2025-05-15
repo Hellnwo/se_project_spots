@@ -1,5 +1,6 @@
 import "./index.css";
 import {enableValidation, resetValidation, disabledBtn, settings} from "../scripts/validation.js";
+import Api from "../scripts/Api.js";
 
 const initialCards = [
 
@@ -32,6 +33,21 @@ const initialCards = [
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
 },
 ];
+
+const api = new Api({
+  baseUrl: "https://around-api.en.tripleten-services.com/v1",
+  headers: {
+    authorization: "54348709-dfc8-4c17-a440-374026562e88",
+    "Content-Type": "application/json"
+  }
+});
+
+api.getInitialCards().then((cards) => {
+  cards.forEach((item) => {
+  const cardEl = getCardElement(item);
+  cardsList.append(cardEl);
+});
+});
 
 const profileEditButton = document.querySelector(".profile__edit-btn");
 const cardModalButton = document.querySelector(".profile__add-btn");
@@ -161,10 +177,5 @@ function closeModal(modal) {
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 cardForm.addEventListener("submit", handleCardFormSubmit);
-
-initialCards.forEach((item) => {
-  const cardEl = getCardElement(item);
-  cardsList.append(cardEl);
-});
 
 enableValidation(settings);
