@@ -8,19 +8,18 @@
     <meta name="description" content="Social image app." />
     <meta name="keywords" content="social, image, image-sharing" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
   <body>
     <div class="page">
       <header class="header page__section">
-        <img src="./images/Logo.svg" alt="Spots Logo" class="header__logo" />
+        <img src="<%=require('./images/Logo.svg')%>" alt="Spots Logo" class="header__logo" />
       </header>
 
       <main class="content">
         <section class="profile page__section">
           <img
-            src="./images/avatar.jpg"
+            src="<%=require('./images/avatar.jpg')%>"
             alt="avatar"
             class="profile__avatar-image"
           />
@@ -29,7 +28,7 @@
             <p class="profile__subtitle">Civil Aviator</p>
             <button class="profile__edit-btn">
               <img
-                src="./images/Pencil.svg"
+                src="<%=require('./images/Pencil.svg')%>"
                 alt="edit button"
                 class="profile__edit-btn-image"
               />
@@ -37,7 +36,7 @@
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus.svg" alt="plus icon" />
+            <img src="<%=require('./images/plus.svg')%>" alt="plus icon" />
             New Post
           </button>
         </section>
@@ -143,7 +142,5 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/validation.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
