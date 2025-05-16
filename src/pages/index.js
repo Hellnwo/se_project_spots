@@ -42,12 +42,19 @@ const api = new Api({
   }
 });
 
-api.getInitialCards().then((cards) => {
+api
+.getAppInfo()
+.then(([cards]) => {
   cards.forEach((item) => {
   const cardEl = getCardElement(item);
   cardsList.append(cardEl);
+
+  // handle user info
+  // set avatar src
+  // set textcontent
 });
-});
+})
+.catch(console.error);
 
 const profileEditButton = document.querySelector(".profile__edit-btn");
 const cardModalButton = document.querySelector(".profile__add-btn");
@@ -109,9 +116,15 @@ function getCardElement(data) {
 
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
-  profileName.textContent = nameInput.value;
-  profileDescription.textContent = descriptionInput.value;
-  closeModal(editModal);
+  api
+    .editUserInfo({name: nameInput.value, about: descriptionInput.value})
+    .then((data) => {
+      // Todo data argument instead of input values
+    profileName.textContent = nameInput.value;
+    profileDescription.textContent = descriptionInput.value;
+    closeModal(editModal);
+    })
+    .catch(console.error);
 }
 
 profileEditButton.addEventListener("click", () => {
