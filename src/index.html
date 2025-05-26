@@ -118,23 +118,23 @@
           <h2 class="modal__title">New Post</h2>
           <form name="add-card" class="modal__form" novalidate>
             <label for="add-card-link-input" class="modal__label">
-              image link
+              Image Link
               <input
                 id="add-card-link-input"
                 type="url"
                 class="modal__input"
-                placeholder="paste link here"
+                placeholder="Paste Link Here"
                 required
               />
               <span id="add-card-link-input-error" class="modal__error"></span>
             </label>
             <label for="add-card-description-input" class="modal__label">
-              caption
+              Caption
               <input
                 id="add-card-description-input"
                 type="text"
                 class="modal__input"
-                placeholder="caption"
+                placeholder="Caption"
                 minlength="2"
                 maxlength="30"
                 required
@@ -160,19 +160,18 @@
           <p class="modal__caption"></p>
         </div>
       </div>
-    </div>
     <div class="modal" id="avatar-modal">
       <div class="modal__container">
         <button type="button" class="modal__close-btn"></button>
         <h2 class="modal__title">Edit profile avatar</h2>
         <form name="edit-avatar" class="modal__form" novalidate>
           <label for="profile-avatar-input" class="modal__label">
-            profile picture
+            Profile Picture
             <input
               id="profile-avatar-input"
-              type="link"
+              type="url"
               class="modal__input"
-              placeholder="paste the link to the image"
+              placeholder="Paste The Link To The Image"
               required
             />
             <span id="profile-avatar-input-error" class="modal__error"></span>
@@ -207,6 +206,7 @@
           </div>
         </form>
       </div>
+    </div>
     </div>
   </body>
 </html>
